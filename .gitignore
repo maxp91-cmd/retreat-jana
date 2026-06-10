@@ -1,0 +1,6 @@
+# macOS
+.DS_Store
+# Original-Bildordner (Quelle, ~90 MB) – wird fürs Hosting nicht gebraucht
+Images/
+# lokale Vorschau-Konfig
+.claude/

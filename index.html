@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kostenlose Breathwork Masterclass | Kristin Planer & Jana Buth</title>
+<meta name="description" content="80 Minuten kostenlose Breathwork Masterclass mit Kristin Planer & Jana Buth. Spüre die Kraft deines Atems – wissenschaftlich fundiert, persönlich begleitet.">
+<meta property="og:title" content="Kostenlose Breathwork Masterclass | Kristin Planer & Jana Buth">
+<meta property="og:description" content="80 Minuten, die dein Nervensystem regulieren, emotionale Blockaden lösen und dich mit einer Ruhe verbinden können, die du vielleicht schon lange suchst.">
+<meta property="og:image" content="images/kristin-jana-lachend.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+--cream:#FAF6F1;--warm-white:#FFFDFB;--sand:#F0E8DE;--blush:#E8C4B8;--blush-light:#F2DDD6;
+--rose:#C9928A;--mauve:#8B7082;--mauve-deep:#6B5060;--sage:#A8B5A0;--sage-light:#D4DFD0;
+--charcoal:#3A3238;--warm-gray:#6B5F66;--light-gray:#A89DA3;
+--serif:'Cormorant Garamond',Georgia,serif;--sans:'DM Sans',-apple-system,sans-serif;
+}
+html{scroll-behavior:smooth;font-size:16px;scroll-padding-top:80px}
+body{font-family:var(--sans);color:var(--charcoal);background:var(--cream);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:1}
+
+.bw-con{max-width:780px;margin:0 auto;padding:0 24px}
+.bw-con-w{max-width:1000px;margin:0 auto;padding:0 24px}
+
+/* NAV */
+.bw-top{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,246,241,0.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(200,180,170,0.15);padding:14px 24px;display:flex;justify-content:space-between;align-items:center}
+.bw-top-logo{font-family:var(--serif);font-size:1.1rem;font-weight:400;color:var(--mauve-deep);letter-spacing:0.02em}
+.bw-top-cta{font-family:var(--sans);font-size:0.78rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--warm-white);background:var(--mauve);padding:8px 20px;border-radius:100px;text-decoration:none;cursor:pointer;transition:all 0.3s ease;white-space:nowrap}
+.bw-top-cta:hover{background:var(--mauve-deep);transform:translateY(-1px)}
+.mobile-break{display:none}
+.bw-cta-short{display:none}
+
+/* SHARED */
+.bw-ey{font-family:var(--sans);font-size:0.72rem;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--rose);margin-bottom:16px}
+.bw-h2{font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.6rem);font-weight:300;line-height:1.25;color:var(--charcoal);margin-bottom:20px}
+.bw-h2 em{font-style:italic;font-weight:400;color:var(--mauve-deep)}
+.bw-p{font-size:1rem;font-weight:300;color:var(--warm-gray);line-height:1.8}
+.bw-btn{display:inline-block;font-family:var(--sans);font-size:0.82rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--warm-white);background:var(--mauve);padding:16px 36px;border-radius:100px;text-decoration:none;border:none;cursor:pointer;transition:all 0.4s cubic-bezier(0.25,0.46,0.45,0.94);box-shadow:0 4px 24px rgba(139,112,130,0.2);line-height:1.4;text-align:center}
+.bw-btn:hover{background:var(--mauve-deep);transform:translateY(-2px);box-shadow:0 8px 32px rgba(139,112,130,0.3)}
+
+/* HERO */
+.bw-hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 24px 60px;position:relative;background:url('images/kristin-jana-sand-liegend.jpg') center/cover no-repeat}
+.bw-hero::before{content:'';position:absolute;inset:0;background:rgba(30,22,26,0.62);z-index:0}
+.bw-hero::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:120px;background:linear-gradient(to bottom,transparent,var(--warm-white));z-index:0}
+.bw-hero-in{position:relative;z-index:1;max-width:780px}
+.bw-hero-ey{font-family:var(--sans);font-size:0.75rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--blush-light);margin-bottom:28px;opacity:0;animation:bwFU 0.8s ease 0.2s forwards}
+.bw-hero-h1{font-family:var(--serif);font-size:clamp(2.4rem,6vw,3.8rem);font-weight:300;line-height:1.15;color:rgba(255,255,255,0.95);margin-bottom:24px;opacity:0;animation:bwFU 0.8s ease 0.4s forwards}
+.bw-hero-h1 em{font-style:italic;font-weight:400;color:var(--blush-light)}
+.bw-hero-sub{font-family:var(--sans);font-size:1.08rem;font-weight:300;line-height:1.8;color:rgba(255,255,255,0.8);max-width:600px;margin:0 auto 28px;opacity:0;animation:bwFU 0.8s ease 0.6s forwards}
+
+/* VIDEO PLAYER (Vidalytics) – im Trailer Modal */
+.bw-video-wrap{opacity:0;animation:bwFadeOnly 0.8s ease 0.7s forwards;margin-bottom:32px}
+
+/* VIDEO GATE (E-Mail-Sperre) */
+.bw-gate{display:none;position:absolute;inset:0;z-index:10;background:rgba(26,21,24,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);flex-direction:column;align-items:center;justify-content:center;padding:32px;text-align:center;border-radius:16px;box-sizing:border-box}
+.bw-gate.active{display:flex}
+.bw-gate-icon{font-size:2.4rem;margin-bottom:16px}
+.bw-gate-h{font-family:var(--serif);font-size:1.6rem;font-weight:400;color:white;margin-bottom:8px}
+.bw-gate-h em{font-style:italic;color:var(--blush)}
+.bw-gate-p{font-size:0.92rem;font-weight:300;color:rgba(255,255,255,0.7);margin-bottom:24px;max-width:380px;line-height:1.6}
+.bw-gate-form{display:flex;flex-direction:column;gap:10px;width:100%;max-width:340px}
+.bw-gate-form input{font-family:var(--sans);font-size:0.95rem;padding:14px 18px;border:1.5px solid rgba(232,196,184,0.4);border-radius:10px;background:rgba(255,255,255,0.08);color:white;outline:none;transition:all 0.3s ease;text-align:center}
+.bw-gate-form input::placeholder{color:rgba(255,255,255,0.4);font-weight:300}
+.bw-gate-form input:focus{border-color:var(--blush);background:rgba(255,255,255,0.12);box-shadow:0 0 0 3px rgba(232,196,184,0.15)}
+.bw-gate-btn{font-family:var(--sans);font-size:0.82rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--charcoal);background:white;padding:14px 32px;border-radius:100px;border:none;cursor:pointer;transition:all 0.3s ease;box-shadow:0 4px 20px rgba(0,0,0,0.2)}
+.bw-gate-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,0.3)}
+.bw-gate-btn:disabled{opacity:0.6;cursor:default;transform:none}
+.bw-gate-form{margin-bottom:16px}
+.bw-gate-priv{font-size:0.7rem;color:rgba(255,255,255,0.35);margin-top:12px;font-weight:300;line-height:1.4}
+.bw-gate{padding:32px 32px 40px}
+
+.bw-hero-bullets{display:flex;flex-direction:column;gap:8px;align-items:center;margin-bottom:32px;opacity:0;animation:bwFU 0.8s ease 0.8s forwards}
+.bw-hero-bullet{font-size:0.95rem;color:rgba(255,255,255,0.88);font-weight:400;display:flex;align-items:center;gap:8px}
+.bw-hero-bullet span{color:var(--sage-light);font-size:1.1rem}
+.bw-hero-wrap{opacity:0;animation:bwFU 0.8s ease 0.9s forwards}
+
+/* PRICE ANCHOR */
+.bw-price{text-align:center;margin-bottom:12px}
+.bw-price-old{font-size:1.1rem;color:var(--light-gray);text-decoration:line-through;font-weight:300}
+.bw-price-new{font-family:var(--serif);font-size:1.8rem;font-weight:500;color:var(--sage);margin-left:8px}
+.bw-hero-note{font-size:0.82rem;color:rgba(255,255,255,0.5);margin-top:16px;font-weight:300}
+
+/* HERO INFO CARD */
+.bw-hero-card{position:absolute;top:104px;left:32px;background:rgba(255,255,255,0.1);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.18);border-radius:16px;padding:18px 22px;text-align:left;z-index:2;min-width:185px}
+.bw-hero-card-tag{font-family:var(--sans);font-size:0.66rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:12px}
+.bw-hero-card-item{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.bw-hero-card-item:last-child{margin-bottom:0}
+.bw-hero-card-dot{width:5px;height:5px;border-radius:50%;background:var(--sage-light);flex-shrink:0}
+.bw-hero-card-txt{font-family:var(--sans);font-size:0.85rem;font-weight:400;color:rgba(255,255,255,0.88);line-height:1.3}
+.bw-hero-card-price{font-family:var(--serif);font-size:1.05rem;color:var(--sage-light);font-weight:400}
+.bw-hero-card-price s{font-family:var(--sans);font-size:0.75rem;font-weight:300;color:rgba(255,255,255,0.38);text-decoration:line-through;font-style:normal;margin-left:4px;vertical-align:middle}
+
+/* HERO CTA ROW */
+.bw-hero-cta-row{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
+
+/* TRAILER BUTTON */
+.bw-trailer-btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-size:0.82rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:rgba(255,255,255,0.82);background:rgba(255,255,255,0.1);padding:15px 26px;border-radius:100px;border:1.5px solid rgba(255,255,255,0.25);cursor:pointer;transition:all 0.3s ease;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);line-height:1.4}
+.bw-trailer-btn:hover{background:rgba(255,255,255,0.18);border-color:rgba(255,255,255,0.45)}
+
+/* TRAILER MODAL */
+.bw-modal{display:none;position:fixed;inset:0;z-index:10000;background:rgba(20,14,18,0.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);align-items:center;justify-content:center;padding:24px}
+.bw-modal.active{display:flex}
+.bw-modal-inner{position:relative;width:100%;max-width:800px}
+.bw-modal-close{position:absolute;top:-48px;right:0;background:none;border:none;color:rgba(255,255,255,0.7);font-size:2rem;cursor:pointer;line-height:1;transition:color 0.2s ease}
+.bw-modal-close:hover{color:white}
+.bw-modal-video{position:relative;padding-top:56.25%;background:#1a1518;border-radius:16px;overflow:hidden}
+.bw-modal-video>div{position:absolute;inset:0;width:100%;height:100%}
+
+/* FORM MODAL */
+.bw-form-modal{display:none;position:fixed;inset:0;z-index:10001;background:rgba(20,14,18,0.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);align-items:center;justify-content:center;padding:20px}
+.bw-form-modal.active{display:flex}
+.bw-form-modal-inner{position:relative;width:100%;max-width:480px;background:var(--cream);border-radius:24px;overflow:hidden;box-shadow:0 32px 80px rgba(0,0,0,0.45);max-height:92vh;overflow-y:auto}
+.bw-form-modal-close{position:absolute;top:-46px;right:0;background:none;border:none;color:rgba(255,255,255,0.7);font-size:2rem;cursor:pointer;line-height:1;transition:color 0.2s ease;padding:4px}
+.bw-form-modal-close:hover{color:white}
+.bw-form-modal-head{padding:28px 28px 0;text-align:center}
+.bw-form-modal-ey{font-family:var(--sans);font-size:0.72rem;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--rose);margin-bottom:10px}
+.bw-form-modal-h{font-family:var(--serif);font-size:1.5rem;font-weight:300;line-height:1.3;color:var(--charcoal);margin-bottom:0}
+.bw-form-modal-h em{font-style:italic;font-weight:400;color:var(--mauve-deep)}
+.bw-form-modal-priv{text-align:center;font-size:0.7rem;color:var(--light-gray);padding:4px 24px 22px;font-weight:300;line-height:1.5}
+.bw-form-modal-priv a{color:var(--light-gray)}
+
+/* GHL FORM WRAPPER */
+.bw-ghl-wrap{max-width:480px;margin:0 auto 24px;background:var(--cream);border-radius:20px;overflow:hidden;box-shadow:0 8px 40px rgba(139,112,130,0.1);border:1px solid rgba(200,180,170,0.15)}
+
+/* MID-SECTION CTA */
+.bw-sec-cta{text-align:center;margin-top:48px}
+
+/* GHL iframe CSS override via :host injection workaround – styles gültig für umgebenden Container */
+.bw-ghl-wrap iframe{display:block;background:var(--cream)}
+
+/* TRUST BAR */
+.bw-trust{background:var(--warm-white);padding:32px 24px;border-bottom:1px solid rgba(200,180,170,0.1)}
+.bw-trust-in{max-width:700px;margin:0 auto;text-align:center}
+.bw-trust-label{font-size:0.72rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--light-gray);margin-bottom:16px}
+.bw-trust-row{display:flex;justify-content:center;align-items:center;gap:32px;flex-wrap:wrap}
+.bw-trust-item{display:flex;flex-direction:column;align-items:center;gap:4px}
+.bw-trust-num{font-family:var(--serif);font-size:1.6rem;font-weight:500;color:var(--mauve-deep)}
+.bw-trust-txt{font-size:0.72rem;color:var(--light-gray);font-weight:400}
+.bw-trust-divider{width:1px;height:36px;background:var(--blush);opacity:0.4}
+
+/* PAIN */
+.bw-pain{background:var(--warm-white);padding:100px 24px}
+.bw-pain-intro{text-align:center;max-width:600px;margin:0 auto 56px}
+.bw-pain-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:720px;margin:0 auto}
+.bw-pain-card{background:var(--cream);border-radius:16px;padding:28px 24px;border:1px solid rgba(200,180,170,0.15);transition:all 0.3s ease}
+.bw-pain-card:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(139,112,130,0.08)}
+.bw-pain-card-i{font-size:1.6rem;margin-bottom:12px;display:block}
+.bw-pain-card-t{font-family:var(--serif);font-size:1.1rem;font-weight:400;font-style:italic;color:var(--charcoal);line-height:1.5}
+
+/* MIDCTA - entfernt */
+
+/* TRANSFORM */
+.bw-tf{background:var(--warm-white);padding:100px 24px;position:relative}
+.bw-tf::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:1px;height:60px;background:linear-gradient(to bottom,var(--blush-light),transparent)}
+.bw-tf-c{text-align:center;max-width:620px;margin:0 auto 48px}
+.bw-tf-list{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:16px;list-style:none}
+.bw-tf-item{display:flex;align-items:flex-start;gap:16px;padding:16px 20px;background:var(--cream);border-radius:12px;border:1px solid rgba(200,180,170,0.1);transition:all 0.3s ease}
+.bw-tf-item:hover{transform:translateX(4px)}
+.bw-tf-ic{flex-shrink:0;width:28px;height:28px;background:var(--sage-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.85rem;margin-top:2px}
+.bw-tf-txt{font-size:1rem;font-weight:400;color:var(--charcoal);line-height:1.6}
+
+/* BREATHWORK IMAGES */
+.bw-bw-imgs{background:var(--cream);padding:60px 24px}
+.bw-bw-imgs-single{max-width:800px;margin:0 auto;text-align:center}
+.bw-bw-imgs-single img{width:100%;max-height:450px;object-fit:cover;border-radius:16px;border:1px solid rgba(200,180,170,0.15);transition:all 0.4s ease;box-shadow:0 8px 32px rgba(139,112,130,0.08)}
+.bw-bw-imgs-single img:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(139,112,130,0.14)}
+.bw-bw-imgs-caption{text-align:center;margin-top:20px;font-family:var(--serif);font-size:1.1rem;font-weight:400;font-style:italic;color:var(--warm-gray)}
+
+/* LEARN */
+.bw-learn{background:var(--cream);padding:100px 24px}
+.bw-learn-c{text-align:center;max-width:620px;margin:0 auto 56px}
+.bw-learn-steps{max-width:640px;margin:0 auto;display:flex;flex-direction:column;position:relative}
+.bw-learn-steps::before{content:'';position:absolute;left:20px;top:40px;bottom:40px;width:1px;background:linear-gradient(to bottom,var(--blush-light),var(--sage-light),var(--blush-light))}
+.bw-ls{display:flex;align-items:flex-start;gap:24px;padding:24px 0;position:relative}
+.bw-ls-n{flex-shrink:0;width:40px;height:40px;background:var(--warm-white);border:1.5px solid var(--blush);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1.1rem;font-weight:500;color:var(--mauve);position:relative;z-index:1}
+.bw-ls-c h3{font-family:var(--serif);font-size:1.2rem;font-weight:500;color:var(--charcoal);margin-bottom:6px}
+.bw-ls-c p{font-size:0.95rem;font-weight:300;color:var(--warm-gray);line-height:1.7}
+
+/* ABOUT */
+.bw-about{background:linear-gradient(170deg,var(--warm-white) 0%,var(--sand) 100%);padding:100px 24px}
+.bw-about-c{text-align:center;max-width:700px;margin:0 auto}
+.bw-about-portraits{display:flex;justify-content:center;gap:32px;margin-top:40px}
+.bw-about-portrait{text-align:center}
+.bw-about-portrait img{width:220px;height:300px;object-fit:cover;object-position:top;border-radius:16px;box-shadow:0 12px 48px rgba(139,112,130,0.12);transition:all 0.4s ease}
+.bw-about-portrait img:hover{transform:translateY(-4px);box-shadow:0 16px 56px rgba(139,112,130,0.18)}
+.bw-about-portrait-name{font-family:var(--serif);font-size:1.15rem;font-weight:500;color:var(--charcoal);margin-top:16px}
+.bw-about-portrait-role{font-size:0.78rem;font-weight:400;color:var(--light-gray);margin-top:4px}
+.bw-about-together{margin-top:40px}
+.bw-about-together img{width:100%;max-width:400px;border-radius:16px;object-fit:cover;box-shadow:0 12px 48px rgba(139,112,130,0.12)}
+.bw-about-txt{font-size:1.02rem;font-weight:300;color:var(--warm-gray);line-height:1.85;margin-top:32px}
+.bw-about-stats{display:flex;justify-content:center;gap:48px;margin-top:48px;flex-wrap:wrap}
+.bw-about-stat{text-align:center}
+.bw-about-stat-n{font-family:var(--serif);font-size:2.2rem;font-weight:400;color:var(--mauve-deep);line-height:1}
+.bw-about-stat-l{font-size:0.78rem;font-weight:400;color:var(--light-gray);letter-spacing:0.04em;margin-top:6px}
+
+/* PROOF */
+.bw-proof{background:var(--warm-white);padding:100px 24px}
+.bw-proof-c{text-align:center;max-width:620px;margin:0 auto 48px}
+.bw-proof-cards{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:24px}
+.bw-proof-card{background:var(--cream);border-radius:16px;padding:32px 28px 28px 28px;border:1px solid rgba(200,180,170,0.12);position:relative}
+.bw-proof-card::before{content:'\201E';font-family:var(--serif);font-size:3.2rem;color:var(--blush);position:absolute;top:10px;left:12px;line-height:1;opacity:0.5}
+.bw-proof-card-t{font-family:var(--serif);font-size:1.08rem;font-weight:400;font-style:italic;color:var(--charcoal);line-height:1.65;padding-top:16px}
+.bw-proof-card-footer{display:flex;align-items:center;gap:14px;margin-top:20px}
+.bw-proof-card-img{width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:top;border:2px solid var(--blush-light);flex-shrink:0}
+.bw-proof-card-info{display:flex;flex-direction:column}
+.bw-proof-card-a{font-family:var(--sans);font-size:0.82rem;font-weight:500;color:var(--mauve);margin:0}
+.bw-proof-card-r{font-size:0.78rem;font-weight:300;color:var(--light-gray);margin-top:2px}
+
+/* VIDEO TESTIMONIALS */
+.bw-vtm{max-width:900px;margin:40px auto 0;display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+.bw-vtm-card{display:flex;flex-direction:column;align-items:center;cursor:pointer;transition:all 0.3s ease}
+.bw-vtm-card-inner{border-radius:16px;overflow:hidden;position:relative;background:var(--charcoal);aspect-ratio:9/16;width:100%;max-height:480px;display:flex;align-items:center;justify-content:center}
+.bw-vtm-card:hover .bw-vtm-card-inner{transform:translateY(-4px);box-shadow:0 12px 40px rgba(58,50,56,0.15)}
+.bw-vtm-card video{width:100%;height:100%;object-fit:cover;border-radius:16px}
+.bw-vtm-play-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(26,21,24,0.2);transition:all 0.3s ease;z-index:2;border-radius:16px}
+.bw-vtm-play-overlay.playing{opacity:0;pointer-events:none}
+.bw-vtm-play{width:56px;height:56px;background:rgba(255,255,255,0.9);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;z-index:2}
+.bw-vtm-play::after{content:'';width:0;height:0;border-style:solid;border-width:10px 0 10px 18px;border-color:transparent transparent transparent var(--mauve);margin-left:3px}
+.bw-vtm-name{text-align:center;font-family:var(--body);font-size:0.9rem;color:var(--charcoal);margin-top:10px;font-weight:600;letter-spacing:0.02em}
+.bw-vtm-subtitle{text-align:center;font-family:var(--body);font-size:0.85rem;color:var(--mauve);margin-top:16px;font-style:italic;grid-column:1/-1}
+
+
+/* FOR YOU */
+.bw-fy{background:var(--cream);padding:100px 24px}
+.bw-fy-c{text-align:center;max-width:620px;margin:0 auto 48px}
+.bw-fy-items{max-width:600px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+.bw-fy-item{display:flex;align-items:flex-start;gap:14px;padding:4px 0}
+.bw-fy-chk{flex-shrink:0;color:var(--sage);font-size:1.1rem;margin-top:3px}
+.bw-fy-txt{font-size:1rem;font-weight:400;color:var(--charcoal);line-height:1.6}
+
+/* FAQ */
+.bw-faq{background:var(--warm-white);padding:100px 24px}
+.bw-faq-c{text-align:center;max-width:620px;margin:0 auto 48px}
+.bw-faq-list{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.bw-faq-item{background:var(--cream);border-radius:12px;border:1px solid rgba(200,180,170,0.12);overflow:hidden}
+.bw-faq-q{padding:20px 24px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-family:var(--serif);font-size:1.08rem;font-weight:500;color:var(--charcoal);transition:all 0.2s ease;user-select:none}
+.bw-faq-q:hover{color:var(--mauve-deep)}
+.bw-faq-arrow{font-size:1.2rem;color:var(--mauve);transition:transform 0.3s ease;flex-shrink:0;margin-left:12px}
+.bw-faq-item.open .bw-faq-arrow{transform:rotate(180deg)}
+.bw-faq-a{padding:0 24px;max-height:0;overflow:hidden;transition:all 0.4s ease}
+.bw-faq-item.open .bw-faq-a{max-height:300px;padding:0 24px 20px}
+.bw-faq-a p{font-size:0.95rem;font-weight:300;color:var(--warm-gray);line-height:1.7}
+
+/* FINAL CTA */
+.bw-cta{background:linear-gradient(170deg,var(--sand) 0%,var(--blush-light) 50%,var(--cream) 100%);padding:100px 24px 120px;text-align:center;position:relative;overflow:hidden}
+.bw-cta-bg{position:absolute;top:0;left:50%;transform:translateX(-50%);width:100%;max-width:1200px;height:100%;opacity:0.08;background:url('images/kristin-jana-tanzen.jpg') center/cover no-repeat;pointer-events:none}
+.bw-cta-in{max-width:560px;margin:0 auto;position:relative;z-index:1}
+.bw-cta .bw-h2{margin-bottom:16px}
+.bw-cta .bw-p{margin-bottom:40px}
+.bw-form{display:flex;flex-direction:column;gap:12px;max-width:420px;margin:0 auto}
+.bw-form input{font-family:var(--sans);font-size:1rem;padding:16px 20px;border:1.5px solid var(--blush);border-radius:12px;background:var(--warm-white);color:var(--charcoal);outline:none;transition:all 0.3s ease;text-align:center;width:100%}
+.bw-form input::placeholder{color:var(--light-gray);font-weight:300}
+.bw-form input:focus{border-color:var(--mauve);box-shadow:0 0 0 3px rgba(139,112,130,0.1)}
+.bw-sub{font-family:var(--sans);font-size:0.82rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--warm-white);background:var(--mauve);padding:18px 36px;border-radius:100px;border:none;cursor:pointer;transition:all 0.4s cubic-bezier(0.25,0.46,0.45,0.94);box-shadow:0 4px 24px rgba(139,112,130,0.2);margin-top:4px;width:100%;line-height:1.4}
+.bw-sub:hover{background:var(--mauve-deep);transform:translateY(-2px);box-shadow:0 8px 32px rgba(139,112,130,0.3)}
+.bw-sub:disabled{background:var(--sage);cursor:default;transform:none;box-shadow:none}
+.bw-priv{font-size:0.76rem;color:var(--light-gray);margin-top:16px;font-weight:300;line-height:1.5}
+.bw-priv a{color:var(--mauve);text-decoration:underline}
+.bw-ferr{color:var(--rose);font-size:0.82rem;font-weight:400;margin-top:8px;display:none}
+
+/* FOOTER */
+.bw-ft{background:var(--charcoal);padding:40px 24px;text-align:center}
+.bw-ft p{font-size:0.78rem;color:rgba(255,255,255,0.4);font-weight:300}
+.bw-ft a{color:rgba(255,255,255,0.5);text-decoration:none}
+.bw-ft a:hover{color:rgba(255,255,255,0.7)}
+
+/* ANIMATIONS */
+@keyframes bwFU{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes bwFadeOnly{from{opacity:0}to{opacity:1}}
+.bw-r{opacity:0;transform:translateY(24px);transition:all 0.7s cubic-bezier(0.25,0.46,0.45,0.94)}
+.bw-r.v{opacity:1;transform:translateY(0)}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.mobile-break{display:inline}
+.bw-cta-long{display:none}
+.bw-cta-short{display:inline}
+.bw-hero-bullet{align-items:flex-start}
+.bw-hero-bullet span{flex-shrink:0;margin-top:2px}
+.bw-hero-card{display:none}
+.bw-about-portraits{flex-direction:column;align-items:center;gap:24px}
+.bw-about-portrait img{width:200px;height:260px}
+.bw-vtm{grid-template-columns:1fr 1fr 1fr}
+.bw-vtm-card{max-height:400px}
+}
+@media(max-width:600px){
+.bw-hero{padding:100px 20px 50px;min-height:auto}
+.bw-pain,.bw-tf,.bw-learn,.bw-about,.bw-proof,.bw-fy,.bw-faq,.bw-cta{padding:72px 20px}
+.bw-pain-grid{grid-template-columns:1fr}
+.bw-vtm{grid-template-columns:1fr;max-width:280px;margin-left:auto;margin-right:auto}
+.bw-vtm-card{max-height:420px}
+.bw-midcta{display:none}
+.bw-about-stats{gap:32px}
+.bw-top-logo{font-size:0.95rem}
+.bw-trust-row{gap:20px}
+.bw-bw-imgs-single img{max-height:320px}
+.bw-gate-h{font-size:1.2rem}
+.bw-gate-p{font-size:0.78rem;margin-bottom:16px}
+.bw-gate{padding:20px 16px 24px;position:fixed;inset:0;border-radius:0;z-index:2147483647}
+.bw-gate-form{max-width:300px}
+.bw-gate-form input{padding:12px 14px;font-size:0.9rem}
+.bw-gate-btn{padding:12px 24px;font-size:0.78rem}
+.bw-gate-icon{font-size:2rem;margin-bottom:10px}
+.bw-gate-priv{margin-top:8px}
+.bw-form-modal{padding:16px}
+.bw-form-modal-inner{border-radius:16px}
+.bw-form-modal-head{padding:20px 20px 0}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="bw-top">
+  <span class="bw-top-logo">Kristin Planer &<br class="mobile-break"> Jana Buth</span>
+  <a class="bw-top-cta" onclick="bwScrollToForm()"><span class="bw-cta-long">Kostenlose Masterclass sichern</span><span class="bw-cta-short">Masterclass sichern</span></a>
+</nav>
+
+<!-- HERO -->
+<section class="bw-hero">
+
+  <!-- INFO CARD -->
+  <div class="bw-hero-card">
+    <p class="bw-hero-card-tag">Jetzt kostenlos</p>
+    <div class="bw-hero-card-item"><span class="bw-hero-card-dot"></span><span class="bw-hero-card-txt">Breathwork Masterclass</span></div>
+    <div class="bw-hero-card-item"><span class="bw-hero-card-dot"></span><span class="bw-hero-card-txt">80 Minuten</span></div>
+    <div class="bw-hero-card-item"><span class="bw-hero-card-dot"></span><span class="bw-hero-card-txt">Jederzeit verfügbar</span></div>
+    <div class="bw-hero-card-item"><span class="bw-hero-card-dot"></span><span class="bw-hero-card-price">0,– <s>statt 97,–</s></span></div>
+  </div>
+
+  <div class="bw-hero-in">
+    <p class="bw-hero-ey">Mit Kristin Planer & Jana Buth</p>
+    <h1 class="bw-hero-h1">Kostenlose<br><em>Breathwork Masterclass</em></h1>
+    <p class="bw-hero-sub">Spüre die Kraft, die in deinem Atem liegt. 80 Minuten, die dein Nervensystem regulieren, emotionale Blockaden lösen und dich mit einer Ruhe verbinden können, die du vielleicht schon lange suchst.</p>
+
+    <div class="bw-hero-bullets">
+      <div class="bw-hero-bullet"><span>✦</span> Breathwork verstehen – wissenschaftlich fundiert</div>
+      <div class="bw-hero-bullet"><span>✦</span> Eine Atemtechnik lernen, die du sofort nutzen kannst</div>
+      <div class="bw-hero-bullet"><span>✦</span> Eine echte Breathwork-Reise erleben</div>
+    </div>
+    <div class="bw-hero-wrap">
+      <div class="bw-hero-cta-row">
+        <a class="bw-btn" onclick="bwScrollToForm()">Kostenlose Masterclass sichern</a>
+        <a class="bw-trailer-btn" href="#" onclick="event.preventDefault();bwOpenModal()">▶ Trailer ansehen</a>
+      </div>
+      <p class="bw-hero-note">Aufgezeichnet · Sofort verfügbar · Komplett kostenlos</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="bw-trust">
+  <div class="bw-trust-in">
+    <p class="bw-trust-label">Warum über 100 Frauen uns vertrauen</p>
+    <div class="bw-trust-row">
+      <div class="bw-trust-item">
+        <span class="bw-trust-num">8+</span>
+        <span class="bw-trust-txt">Jahre Erfahrung</span>
+      </div>
+      <div class="bw-trust-divider"></div>
+      <div class="bw-trust-item">
+        <span class="bw-trust-num">750+</span>
+        <span class="bw-trust-txt">Sessions begleitet</span>
+      </div>
+      <div class="bw-trust-divider"></div>
+      <div class="bw-trust-item">
+        <span class="bw-trust-num">Runde 2</span>
+        <span class="bw-trust-txt">Komplett ausgebucht</span>
+      </div>
+      <div class="bw-trust-divider"></div>
+      <div class="bw-trust-item">
+        <span class="bw-trust-num">⭐ 5.0</span>
+        <span class="bw-trust-txt">Trustpilot Bewertung</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN -->
+<section class="bw-pain">
+  <div class="bw-con">
+    <div class="bw-pain-intro bw-r">
+      <p class="bw-ey">Erkennst du dich wieder?</p>
+      <h2 class="bw-h2">Vielleicht spürst du, dass da <em>mehr</em> möglich ist</h2>
+    </div>
+    <div class="bw-pain-grid">
+      <div class="bw-pain-card bw-r"><span class="bw-pain-card-i">🌊</span><p class="bw-pain-card-t">„Ich funktioniere – aber ich spüre mich nicht mehr wirklich."</p></div>
+      <div class="bw-pain-card bw-r"><span class="bw-pain-card-i">💭</span><p class="bw-pain-card-t">„Mein Kopf hört nicht auf zu rattern. Ich wünsche mir endlich Stille."</p></div>
+      <div class="bw-pain-card bw-r"><span class="bw-pain-card-i">🫣</span><p class="bw-pain-card-t">„Bin ich wirklich gut genug, um andere zu begleiten?"</p></div>
+      <div class="bw-pain-card bw-r"><span class="bw-pain-card-i">🌱</span><p class="bw-pain-card-t">„Ich suche ein Tool, das tiefer geht als alles, was ich bisher kenne."</p></div>
+      <div class="bw-pain-card bw-r"><span class="bw-pain-card-i">🧘‍♀️</span><p class="bw-pain-card-t">„Ich möchte einen Beruf, der mich nicht stresst, sondern nährt."</p></div>
+      <div class="bw-pain-card bw-r"><span class="bw-pain-card-i">🤍</span><p class="bw-pain-card-t">„Ich will Körper, Emotion und Nervensystem endlich verbinden."</p></div>
+    </div>
+    <div class="bw-sec-cta bw-r">
+      <a class="bw-btn" onclick="bwScrollToForm()">Kostenlose Masterclass sichern</a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- TRANSFORM -->
+<section class="bw-tf">
+  <div class="bw-con">
+    <div class="bw-tf-c bw-r">
+      <p class="bw-ey">Dein Atem verändert alles</p>
+      <h2 class="bw-h2">Was passiert, wenn du <em>bewusst</em> atmest</h2>
+      <p class="bw-p">Nach dieser Masterclass weißt du nicht nur, wie Breathwork wirkt – du hast es am eigenen Körper gespürt.</p>
+    </div>
+    <ul class="bw-tf-list">
+      <li class="bw-tf-item bw-r"><span class="bw-tf-ic">✦</span><span class="bw-tf-txt">Dein Nervensystem kommt in die Regulation – du spürst eine <strong>tiefe Ruhe</strong>, die nicht aus dem Kopf kommt, sondern aus dem Körper.</span></li>
+      <li class="bw-tf-item bw-r"><span class="bw-tf-ic">✦</span><span class="bw-tf-txt">Du verstehst, warum Breathwork auf <strong>4 Ebenen</strong> wirkt – körperlich, emotional, mental und energetisch.</span></li>
+      <li class="bw-tf-item bw-r"><span class="bw-tf-ic">✦</span><span class="bw-tf-txt">Emotionale Blockaden dürfen sich <strong>lösen</strong> – sanft, sicher, in deinem Tempo.</span></li>
+      <li class="bw-tf-item bw-r"><span class="bw-tf-ic">✦</span><span class="bw-tf-txt">Du erlebst deine <strong>eigene Breathwork-Reise</strong> – kein Theorie-Vortrag, sondern echtes Spüren.</span></li>
+      <li class="bw-tf-item bw-r"><span class="bw-tf-ic">✦</span><span class="bw-tf-txt">Du erfährst, warum Breathwork ein <strong>wirksames Tool</strong> für deine bestehende Arbeit sein kann – als Hebamme, Coach, Therapeutin oder Mama.</span></li>
+    </ul>
+    <div class="bw-sec-cta bw-r">
+      <a class="bw-btn" onclick="bwScrollToForm()">Kostenlose Masterclass sichern</a>
+    </div>
+  </div>
+</section>
+
+<!-- BREATHWORK IMAGES -->
+<section class="bw-bw-imgs">
+  <div class="bw-con-w">
+    <div class="bw-bw-imgs-single">
+      <img src="images/kristin-jana-sand-liegend.jpg" alt="Kristin & Jana – lachend auf dem Rücken im Sand liegend, von oben fotografiert" class="bw-r" loading="lazy">
+    </div>
+    <p class="bw-bw-imgs-caption bw-r">Breathwork erleben – in Verbindung mit dir selbst</p>
+  </div>
+</section>
+
+<!-- LEARN -->
+<section class="bw-learn">
+  <div class="bw-con">
+    <div class="bw-learn-c bw-r">
+      <p class="bw-ey">80 Minuten, die sich anfühlen wie ein Geschenk</p>
+      <h2 class="bw-h2">Das erwartet dich <em>in der Masterclass</em></h2>
+    </div>
+    <div class="bw-learn-steps">
+      <div class="bw-ls bw-r"><span class="bw-ls-n">1</span><div class="bw-ls-c"><h3>Unsere Geschichte — wie der Atem uns zurück zu uns selbst gebracht hat</h3></div></div>
+      <div class="bw-ls bw-r"><span class="bw-ls-n">2</span><div class="bw-ls-c"><h3>Was in deinem Körper geschieht, wenn du bewusst atmest — einfühlsam erklärt, tief verständlich</h3></div></div>
+      <div class="bw-ls bw-r"><span class="bw-ls-n">3</span><div class="bw-ls-c"><h3>Den verbundenen Atem entdecken — Schritt für Schritt, in deinem eigenen Tempo</h3></div></div>
+      <div class="bw-ls bw-r"><span class="bw-ls-n">4</span><div class="bw-ls-c"><h3>Deine geführte Atemreise — ein Moment nur für dich, für innere Stille und Leichtigkeit</h3></div></div>
+      <div class="bw-ls bw-r"><span class="bw-ls-n">5</span><div class="bw-ls-c"><h3>Dein nächster Schritt — wie du den Atem als tägliche Begleiterin in dein Leben einlädst</h3></div></div>
+    </div>
+    <div class="bw-sec-cta bw-r">
+      <a class="bw-btn" onclick="bwScrollToForm()">Kostenlose Masterclass sichern</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="bw-about">
+  <div class="bw-con">
+    <div class="bw-about-c bw-r">
+      <p class="bw-ey">Deine Begleiterinnen</p>
+      <h2 class="bw-h2"><em>Kristin Planer</em> & <em>Jana Buth</em></h2>
+
+      <!-- GEMEINSAMES BILD -->
+      <div class="bw-about-together">
+        <img src="images/kristin-jana-fullbody.jpg" alt="Kristin & Jana – gemeinsam lachend am Strand" loading="lazy">
+      </div>
+
+      <p class="bw-about-txt bw-r">Zwei Schwestern, ein gemeinsamer Weg. Kristin – früher Leistungssportlerin und Brand Managerin einer führenden Sportmarke – fand durch Breathwork den Weg aus stressbedingtem Haarausfall zurück zu sich selbst. Jana – ebenfalls ehemalige Leistungssportlerin und Coach bei einem führenden deutschen Digital-Health-Unternehmen – ließ durch Breathwork und Coaching den Dauerfunktionsmodus hinter sich. So fand sie zurück in ihre eigene Kraft und das Vertrauen in sich und das Leben. Gemeinsam haben sie eine einzigartige Methode entwickelt, die Breathwork mit Innerer-Kind-Arbeit verbindet. Nachdem die ersten beiden Ausbildungsrunden komplett ausgebucht waren, ist die nächste Runde bereits in Planung.</p>
+      <div class="bw-sec-cta bw-r">
+        <a class="bw-btn" onclick="bwScrollToForm()">Kostenlose Masterclass sichern</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section class="bw-proof">
+  <div class="bw-con">
+    <div class="bw-proof-c bw-r">
+      <p class="bw-ey">Echte Stimmen, echte Veränderung</p>
+      <h2 class="bw-h2">Was Frauen nach <em>Breathwork</em> sagen</h2>
+    </div>
+    <div class="bw-proof-cards">
+      <div class="bw-proof-card bw-r">
+        <p class="bw-proof-card-t">Ich habe die Ausbildung bei Kristin gemacht und ich finde sie macht das richtig super. Du bist dort in besten Händen und am Ende bestens vorbereitet, selbst Breathwork zu geben. Man merkt, dass Kristins Herz für Breathwork schlägt und sie nicht nur empathisch ist, sondern auch super kompetent und wissenschaftlich fundiert.</p>
+        <div class="bw-proof-card-footer"><img class="bw-proof-card-img" src="images/julie-loeffler.jpg" alt="Julie Löffler"><div class="bw-proof-card-info"><p class="bw-proof-card-a">Julie Löffler</p><p class="bw-proof-card-r">@solandpepper</p></div></div>
+      </div>
+      <div class="bw-proof-card bw-r">
+        <p class="bw-proof-card-t">Bei Kristin ins Breathwork einzusteigen war die beste Entscheidung für mich in diesem Jahr. Ich fühle mich jetzt viel mehr mit mir selbst verbunden. Ich konnte durch Kristins wunderbare Art von Breathwork wieder mein Strahlen von innen heraus finden. Ich bin super dankbar und freue mich auf die weitere gemeinsame Reise.</p>
+        <div class="bw-proof-card-footer"><img class="bw-proof-card-img" src="images/kelly-flint.jpg" alt="Kelly Flint"><div class="bw-proof-card-info"><p class="bw-proof-card-a">Kelly Flint</p><p class="bw-proof-card-r">@kellyflint</p></div></div>
+      </div>
+      <div class="bw-proof-card bw-r">
+        <p class="bw-proof-card-t">Dank meinen Breathwork Sessions mit Kristin durfte ich schwierigen Themen in mir mit offenem Herzen begegnen. Ich habe neue Seiten in mir entdeckt und Wege gefunden, aus Herausforderungen inneres Wachstum zu schöpfen. Es war tief erholsam und zugleich zutiefst belebend. Eine Erfahrung, für die ich von Herzen dankbar bin.</p>
+        <div class="bw-proof-card-footer"><img class="bw-proof-card-img" src="images/julia-thiele.jpg" alt="Julia Thiele"><div class="bw-proof-card-info"><p class="bw-proof-card-a">Julia Thiele</p><p class="bw-proof-card-r">@julia.thiele_family</p></div></div>
+      </div>
+    </div>
+    <!-- VIDEO TESTIMONIALS -->
+    <div class="bw-vtm">
+      <div class="bw-vtm-card bw-r" id="vtm-1">
+        <div class="bw-vtm-card-inner">
+          <video src="https://assets.cdn.filesafe.space/VJ1xBHfXVmJEJFpkiTaY/media/688a330fc6431c4a4923c2d2.mov" playsinline preload="auto" webkit-playsinline playsinline onclick="toggleTestimonial(this)"></video>
+          <div class="bw-vtm-play-overlay" onclick="toggleTestimonial(this.closest('.bw-vtm-card').querySelector('video'))">
+            <div class="bw-vtm-play"></div>
+          </div>
+        </div>
+        <p class="bw-vtm-name">Melanie Kräft</p>
+      </div>
+      <div class="bw-vtm-card bw-r" id="vtm-2">
+        <div class="bw-vtm-card-inner">
+          <video src="https://assets.cdn.filesafe.space/VJ1xBHfXVmJEJFpkiTaY/media/688a330f1e8cae715c8ac214.mov" playsinline preload="auto" webkit-playsinline playsinline onclick="toggleTestimonial(this)"></video>
+          <div class="bw-vtm-play-overlay" onclick="toggleTestimonial(this.closest('.bw-vtm-card').querySelector('video'))">
+            <div class="bw-vtm-play"></div>
+          </div>
+        </div>
+        <p class="bw-vtm-name">Julia Endl</p>
+      </div>
+      <div class="bw-vtm-card bw-r" id="vtm-3">
+        <div class="bw-vtm-card-inner">
+          <video src="https://assets.cdn.filesafe.space/VJ1xBHfXVmJEJFpkiTaY/media/688a330fe7e769e927fcce5b.mov" playsinline preload="auto" webkit-playsinline playsinline onclick="toggleTestimonial(this)"></video>
+          <div class="bw-vtm-play-overlay" onclick="toggleTestimonial(this.closest('.bw-vtm-card').querySelector('video'))">
+            <div class="bw-vtm-play"></div>
+          </div>
+        </div>
+        <p class="bw-vtm-name">Kim Sieberichs</p>
+      </div>
+      <p class="bw-vtm-subtitle">Teilnehmerinnen der Breathwork Coach Ausbildung</p>
+    </div>
+    <div class="bw-sec-cta bw-r">
+      <a class="bw-btn" onclick="bwScrollToForm()">Kostenlose Masterclass sichern</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOR YOU -->
+<section class="bw-fy">
+  <div class="bw-con">
+    <div class="bw-fy-c bw-r">
+      <p class="bw-ey">Ist das dein Weg?</p>
+      <h2 class="bw-h2">Die Masterclass ist <em>für dich</em>, wenn …</h2>
+    </div>
+    <div class="bw-fy-items">
+      <div class="bw-fy-item bw-r"><span class="bw-fy-chk">✓</span><span class="bw-fy-txt">… du in einem Heilberuf arbeitest und ein Tool suchst, das wirklich tief geht – als Hebamme, Therapeutin, Coach oder Krankenschwester.</span></div>
+      <div class="bw-fy-item bw-r"><span class="bw-fy-chk">✓</span><span class="bw-fy-txt">… du Mama bist und dir mehr innere Ruhe, Präsenz und Gelassenheit wünschst – für dich und deine Kinder.</span></div>
+      <div class="bw-fy-item bw-r"><span class="bw-fy-chk">✓</span><span class="bw-fy-txt">… du dich beruflich neu orientieren möchtest und eine Berufung in dir spürst, die raus will.</span></div>
+      <div class="bw-fy-item bw-r"><span class="bw-fy-chk">✓</span><span class="bw-fy-txt">… du schon mit Menschen arbeitest und merkst: Da ist noch so viel mehr möglich.</span></div>
+      <div class="bw-fy-item bw-r"><span class="bw-fy-chk">✓</span><span class="bw-fy-txt">… du dir eine tiefere Verbindung zu dir selbst wünschst – jenseits von allem, was du schon probiert hast.</span></div>
+      <div class="bw-fy-item bw-r"><span class="bw-fy-chk">✓</span><span class="bw-fy-txt">… du einfach neugierig bist und Breathwork zum ersten Mal erleben möchtest – sicher und begleitet.</span></div>
+    </div>
+    <div class="bw-sec-cta bw-r">
+      <a class="bw-btn" onclick="bwScrollToForm()">Kostenlose Masterclass sichern</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bw-faq">
+  <div class="bw-con">
+    <div class="bw-faq-c bw-r">
+      <p class="bw-ey">Häufige Fragen</p>
+      <h2 class="bw-h2">Alles, was du <em>wissen</em> möchtest</h2>
+    </div>
+    <div class="bw-faq-list">
+      <div class="bw-faq-item bw-r">
+        <div class="bw-faq-q" onclick="this.parentElement.classList.toggle('open')">Brauche ich Vorkenntnisse?<span class="bw-faq-arrow">▾</span></div>
+        <div class="bw-faq-a"><p>Nein, überhaupt nicht. Die Masterclass ist für Anfängerinnen genauso geeignet wie für Frauen, die schon Erfahrung mit Breathwork haben. Wir erklären alles Schritt für Schritt und begleiten dich durch die gesamte Erfahrung.</p></div>
+      </div>
+      <div class="bw-faq-item bw-r">
+        <div class="bw-faq-q" onclick="this.parentElement.classList.toggle('open')">Wie lange habe ich Zugang zur Masterclass?<span class="bw-faq-arrow">▾</span></div>
+        <div class="bw-faq-a"><p>Nach deiner Anmeldung erhältst du sofort Zugang zur aufgezeichneten Masterclass. Du kannst sie so oft anschauen, wie du möchtest – sie bleibt für dich verfügbar.</p></div>
+      </div>
+      <div class="bw-faq-item bw-r">
+        <div class="bw-faq-q" onclick="this.parentElement.classList.toggle('open')">Was muss ich für die Breathwork Experience vorbereiten?<span class="bw-faq-arrow">▾</span></div>
+        <div class="bw-faq-a"><p>Sorge für eine ruhige Umgebung, halte eine Decke und Wasser bereit und lege dich am besten hin. Kopfhörer verstärken das Erlebnis. Wir erklären alles in der Masterclass nochmal im Detail.</p></div>
+      </div>
+      <div class="bw-faq-item bw-r">
+        <div class="bw-faq-q" onclick="this.parentElement.classList.toggle('open')">Ist das wirklich komplett kostenlos?<span class="bw-faq-arrow">▾</span></div>
+        <div class="bw-faq-a"><p>Ja, zu 100 %. Keine versteckten Kosten, kein Abo, kein Haken. Wir möchten, dass so viele Frauen wie möglich die Kraft von Breathwork erleben. Am Ende der Masterclass stellen wir unsere Ausbildung vor – aber das ist ein Angebot, keine Bedingung.</p></div>
+      </div>
+      <div class="bw-faq-item bw-r">
+        <div class="bw-faq-q" onclick="this.parentElement.classList.toggle('open')">Gibt es gesundheitliche Einschränkungen?<span class="bw-faq-arrow">▾</span></div>
+        <div class="bw-faq-a"><p><strong>Haftungsausschluss & gesundheitliche Voraussetzungen:</strong><br>Der bewusst verbundene Atem ist eine sehr kraftvolle und wirkungsvolle Praxis, die bei bestimmten körperlichen oder mentalen Zuständen vorab ärztlich abgeklärt werden sollte oder in manchen Fällen überhaupt nicht empfohlen wird. Dazu gehören eine Schwangerschaft, Epilepsie, unbehandelter Bluthochdruck oder schwere Herz-Kreislauf-Erkrankungen. Auch bei einem hohen Augeninnendruck, diagnostizierten Aneurysmen, klinischen Angst- oder Panikattacken sowie bei Psychosen oder einem Schlaganfall in der Vorgeschichte ist Vorsicht geboten. Gleiches gilt, wenn du unter einem starken Tinnitus leidest, da sich die Geräuschwahrnehmung durch die intensive Atmung kurzzeitig verändern kann. Auch wenn du erst kürzlich operiert wurdest und Wunden oder Knochenbrüche noch heilen, oder wenn du Medikamente einnimmst, die die Gehirnchemie beeinflussen, wie etwa Antidepressiva oder Anti-Angst-Mittel, empfehlen wir die Teilnahme nicht oder nur nach ärztlicher Abklärung.</p><p>Bitte vergewissere dich für dich selbst, dass keine dieser Punkte auf dich zutreffen, wenn du dich jetzt für die Teilnahme entscheidest. Wichtig ist uns auch zu sagen, dass Breathwork und Coaching niemals eine medizinische oder psychiatrische Behandlung ersetzen können. Es liegt in deiner eigenen Verantwortung, dir die spezifische medizinische Unterstützung zu suchen, falls du sie zusätzlich benötigen solltest.</p><p>Mit deiner Teilnahme bestätigst du uns einfach, dass du ganz freiwillig bei dieser Session dabei bist und die volle Verantwortung für dein körperliches, geistiges und emotionales Wohlbefinden übernimmst. Wir halten den Raum für dich – und du sorgst dafür, dass du die notwendigen gesundheitlichen Voraussetzungen mitbringst.</p></div>
+      </div>
+      <div class="bw-faq-item bw-r">
+        <div class="bw-faq-q" onclick="this.parentElement.classList.toggle('open')">Wer sind Kristin & Jana?<span class="bw-faq-arrow">▾</span></div>
+        <div class="bw-faq-a"><p>Mehr über Kristin und Jana erfährst du weiter oben auf dieser Seite im Abschnitt „Deine Begleiterinnen“.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="bw-cta" id="anmelden">
+  <div class="bw-cta-bg"></div>
+  <div class="bw-cta-in bw-r">
+    <p class="bw-ey">Kostenlos · Sofort · Für dich</p>
+    <h2 class="bw-h2">Deine kostenlose<br><em>Breathwork Masterclass</em></h2>
+    <p class="bw-p">Trag dich jetzt ein und erhalte sofort Zugang. 80 Minuten, die wirklich etwas in dir berühren dürfen.</p>
+    <div class="bw-ghl-wrap">
+      <iframe
+        src="https://api.leadconnectorhq.com/widget/form/V44QQWmmX7rUHHYmUxi9"
+        style="width:100%;height:520px;border:none" scrolling="no"
+        id="inline-V44QQWmmX7rUHHYmUxi9"
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="Masterclass 2026 -> Extern"
+        data-height="520"
+        data-layout-iframe-id="inline-V44QQWmmX7rUHHYmUxi9"
+        data-form-id="V44QQWmmX7rUHHYmUxi9"
+        title="Masterclass 2026 -> Extern">
+      </iframe>
+      <script>window.addEventListener('message', function(e) { if(e.data && typeof e.data === 'string' && e.data.includes('scroll')) e.stopImmediatePropagation(); }, true);</script>
+      <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+    </div>
+    <p class="bw-priv">Kein Spam. Du kannst dich jederzeit abmelden.<br>Mit der Anmeldung stimmst du unserer <a href="https://kristinplaner.com/datenschutz" target="_blank" rel="noopener">Datenschutzerklärung</a> zu.</p>
+  </div>
+</section>
+
+<!-- TRAILER MODAL -->
+<div class="bw-modal" id="bw-modal" onclick="if(event.target===this)bwCloseModal()">
+  <div class="bw-modal-inner">
+    <button class="bw-modal-close" onclick="bwCloseModal()">✕</button>
+    <div class="bw-modal-video">
+      <iframe id="bw-vimeo-player" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:16px;"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- FORM MODAL -->
+<div class="bw-form-modal" id="bw-form-modal" onclick="if(event.target===this)bwCloseFormModal()">
+  <div class="bw-form-modal-inner">
+    <button class="bw-form-modal-close" onclick="bwCloseFormModal()">✕</button>
+    <div class="bw-form-modal-head">
+      <p class="bw-form-modal-ey">Kostenlos · Sofort · Für dich</p>
+      <h2 class="bw-form-modal-h">Deine <em>Breathwork Masterclass</em></h2>
+    </div>
+    <iframe
+      src="https://api.leadconnectorhq.com/widget/form/V44QQWmmX7rUHHYmUxi9"
+      style="width:100%;height:520px;border:none;display:block"
+      id="popup-V44QQWmmX7rUHHYmUxi9"
+      data-layout="{'id':'INLINE'}"
+      data-trigger-type="alwaysShow"
+      data-trigger-value=""
+      data-activation-type="alwaysActivated"
+      data-activation-value=""
+      data-deactivation-type="neverDeactivate"
+      data-deactivation-value=""
+      data-form-name="Masterclass 2026 -> Extern"
+      data-height="520"
+      data-layout-iframe-id="popup-V44QQWmmX7rUHHYmUxi9"
+      data-form-id="V44QQWmmX7rUHHYmUxi9"
+      title="Masterclass 2026 -> Extern">
+    </iframe>
+    <p class="bw-form-modal-priv">Kein Spam. Du kannst dich jederzeit abmelden.<br>Mit der Anmeldung stimmst du unserer <a href="https://kristinplaner.com/datenschutz" target="_blank" rel="noopener">Datenschutzerklärung</a> zu.</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bw-ft">
+  <p>&copy; 2026 Kristin Planer & Jana Buth · <a href="https://kristinplaner.com/impressum" target="_blank" rel="noopener">Impressum</a> · <a href="https://kristinplaner.com/datenschutz" target="_blank" rel="noopener">Datenschutz</a></p>
+</footer>
+
+
+<script>
+(function(){
+  // Scroll-Animationen
+  document.querySelectorAll('.bw-r').forEach(function(el){
+    new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('v')})},{threshold:0.1,rootMargin:'0px 0px -40px 0px'}).observe(el);
+  });
+})();
+
+// Form Modal
+function bwOpenFormModal(){
+  document.getElementById('bw-form-modal').classList.add('active');
+  document.body.style.overflow='hidden';
+}
+function bwCloseFormModal(){
+  document.getElementById('bw-form-modal').classList.remove('active');
+  document.body.style.overflow='';
+}
+function bwScrollToForm(){bwOpenFormModal();}
+
+// GHL Formular: Auto-Scroll verhindern
+window.addEventListener('message', function(e) {
+  if (e.data && e.data.type === 'hsFormCallback') return;
+  // GHL scroll-to-frame Nachrichten abfangen
+  if (e.data && typeof e.data === 'string') {
+    try {
+      var d = JSON.parse(e.data);
+      if (d && (d.type === 'scroll' || d.action === 'scroll')) return;
+    } catch(err) {}
+  }
+}, false);
+
+// GHL Formular: Design-Anpassung per CSS-Injection in iframe
+(function(){
+  var ghlFrame = document.getElementById('inline-V44QQWmmX7rUHHYmUxi9');
+  if (!ghlFrame) return;
+  function injectGHLStyles(){
+    try {
+      var doc = ghlFrame.contentDocument || ghlFrame.contentWindow.document;
+      if (!doc || !doc.head) return;
+      var style = doc.createElement('style');
+      style.textContent = [
+        'body, html { background: #FAF6F1 !important; font-family: "DM Sans", -apple-system, sans-serif !important; }',
+        'input, select, textarea { font-family: "DM Sans", -apple-system, sans-serif !important; border: 1.5px solid #E8C4B8 !important; border-radius: 10px !important; background: #FFFDFB !important; color: #3A3238 !important; padding: 14px 18px !important; }',
+        'input:focus, select:focus, textarea:focus { border-color: #8B7082 !important; box-shadow: 0 0 0 3px rgba(139,112,130,0.1) !important; outline: none !important; }',
+        'button[type="submit"], .hl-btn, input[type="submit"] { background: #8B7082 !important; color: #fff !important; border: none !important; border-radius: 100px !important; font-family: "DM Sans", sans-serif !important; font-weight: 500 !important; letter-spacing: 0.06em !important; text-transform: uppercase !important; padding: 16px 36px !important; cursor: pointer !important; }',
+        'button[type="submit"]:hover, .hl-btn:hover { background: #6B5060 !important; }',
+        'label { color: #6B5F66 !important; font-family: "DM Sans", sans-serif !important; font-size: 0.9rem !important; }',
+        '*[style*="color: green"], *[style*="color:#"] { color: #8B7082 !important; }',
+        '.text-green-500, .text-green-600, .text-green-700 { color: #8B7082 !important; }'
+      ].join('\n');
+      doc.head.appendChild(style);
+    } catch(e) {}
+  }
+  ghlFrame.addEventListener('load', injectGHLStyles);
+  // Fallback: nach kurzer Verzögerung nochmal versuchen
+  setTimeout(injectGHLStyles, 1500);
+})();
+
+// Trailer Modal
+function bwOpenModal(){
+  var player=document.getElementById('bw-vimeo-player');
+  player.src='https://player.vimeo.com/video/1183442670?autoplay=1&title=0&byline=0&portrait=0';
+  document.getElementById('bw-modal').classList.add('active');
+  document.body.style.overflow='hidden';
+}
+function bwCloseModal(){
+  document.getElementById('bw-modal').classList.remove('active');
+  var player=document.getElementById('bw-vimeo-player');
+  if(player){player.src='';}
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){bwCloseModal();bwCloseFormModal();}});
+
+// Video Testimonials: Poster für iOS generieren
+function generateVideoPosters(){
+  document.querySelectorAll('.bw-vtm-card video').forEach(function(v){
+    v.addEventListener('loadeddata',function(){
+      if(!v.poster){
+        try{
+          v.currentTime=0.5;
+          v.addEventListener('seeked',function onSeeked(){
+            try{
+              var c=document.createElement('canvas');
+              c.width=v.videoWidth;c.height=v.videoHeight;
+              c.getContext('2d').drawImage(v,0,0);
+              v.poster=c.toDataURL('image/jpeg',0.7);
+            }catch(e){}
+            v.removeEventListener('seeked',onSeeked);
+            v.currentTime=0;
+          });
+        }catch(e){}
+      }
+    });
+    v.style.background='linear-gradient(135deg,#8B7082,#6B5060)';
+  });
+}
+generateVideoPosters();
+
+// Video Testimonials Play/Pause
+function toggleTestimonial(videoEl){
+  if(!videoEl||!videoEl.tagName||videoEl.tagName!=='VIDEO')return;
+  var overlay=videoEl.parentElement.querySelector('.bw-vtm-play-overlay');
+  if(videoEl.paused){
+    document.querySelectorAll('.bw-vtm-card video').forEach(function(v){
+      if(v!==videoEl){v.pause();var o=v.parentElement.querySelector('.bw-vtm-play-overlay');if(o)o.classList.remove('playing');}
+    });
+    videoEl.play();
+    if(overlay)overlay.classList.add('playing');
+  }else{
+    videoEl.pause();
+    if(overlay)overlay.classList.remove('playing');
+  }
+}
+</script>
+</body>
+</html>
