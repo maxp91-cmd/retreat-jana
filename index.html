@@ -184,6 +184,47 @@ img{display:block}
 .sg-price-deadline{display:inline-flex;align-items:center;gap:8px;font-size:0.84rem;font-weight:500;color:var(--clay-deep);background:var(--clay-soft);padding:8px 16px;border-radius:10px;margin:18px 0 4px;line-height:1.3}
 .sg-price-deadline svg{width:16px;height:16px;stroke:var(--clay-deep);flex-shrink:0}
 
+/* BOOKING FORM */
+.sg-fm-sec{background:linear-gradient(180deg,var(--cream),var(--sand-soft));padding:90px 24px 104px}
+.sg-fm-head{text-align:center;max-width:600px;margin:0 auto 40px}
+.sg-fm{max-width:600px;margin:0 auto;background:var(--warm-white);border-radius:24px;border:1px solid rgba(193,140,99,0.18);box-shadow:0 24px 70px rgba(107,83,55,0.12);padding:40px 38px}
+.sg-fm-group{margin-bottom:26px}
+.sg-fm-legend{font-family:var(--serif);font-size:1.28rem;font-weight:500;color:var(--brown);margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid rgba(193,140,99,0.16)}
+.sg-fm-row{display:flex;gap:14px}
+.sg-fm-field{margin-bottom:14px;flex:1}
+.sg-fm-field label{display:block;font-size:0.82rem;font-weight:500;color:var(--warm-gray);margin-bottom:6px}
+.sg-fm-field input,.sg-fm-field select,.sg-fm-field textarea{width:100%;font-family:var(--sans);font-size:0.96rem;color:var(--charcoal);padding:13px 15px;border:1.5px solid var(--clay-soft);border-radius:11px;background:var(--cream);outline:none;transition:all 0.25s ease}
+.sg-fm-field input:focus,.sg-fm-field select:focus,.sg-fm-field textarea:focus{border-color:var(--clay);background:#fff;box-shadow:0 0 0 3px rgba(193,140,99,0.13)}
+.sg-fm-field textarea{resize:vertical}
+.sg-fm-ticket{display:flex;align-items:center;gap:14px;border:1.5px solid var(--clay-soft);border-radius:14px;padding:15px 18px;margin-bottom:12px;cursor:pointer;transition:all 0.25s ease;background:var(--cream)}
+.sg-fm-ticket:hover{border-color:var(--clay)}
+.sg-fm-ticket input{accent-color:var(--clay-deep);width:20px;height:20px;flex-shrink:0}
+.sg-fm-ticket:has(input:checked){border-color:var(--clay-deep);background:#fff;box-shadow:0 4px 16px rgba(193,140,99,0.12)}
+.sg-fm-ticket-body{display:flex;flex-direction:column}
+.sg-fm-ticket-body strong{font-family:var(--serif);font-size:1.12rem;font-weight:500;color:var(--charcoal)}
+.sg-fm-ticket-body small{font-size:0.82rem;color:var(--warm-gray);margin-top:2px}
+.sg-fm-consent{margin:22px 0 6px}
+.sg-legal{border:1px solid rgba(193,140,99,0.18);border-radius:11px;background:var(--cream);margin-bottom:10px;overflow:hidden}
+.sg-legal summary{cursor:pointer;padding:13px 16px;font-size:0.86rem;font-weight:500;color:var(--clay-deep);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.sg-legal summary::-webkit-details-marker{display:none}
+.sg-legal summary::after{content:'▾';transition:transform 0.3s ease}
+.sg-legal[open] summary::after{transform:rotate(180deg)}
+.sg-legal-body{max-height:230px;overflow-y:auto;padding:6px 16px 16px;font-size:0.82rem;line-height:1.62;color:var(--warm-gray);border-top:1px solid rgba(193,140,99,0.12)}
+.sg-legal-body h4{font-family:var(--sans);font-size:0.86rem;font-weight:600;color:var(--brown);margin:14px 0 4px}
+.sg-legal-body h4:first-child{margin-top:6px}
+.sg-legal-body ul{margin:6px 0 6px 18px}
+.sg-legal-body li{margin-bottom:4px}
+.sg-fm-check{display:flex;align-items:flex-start;gap:11px;font-size:0.9rem;color:var(--charcoal);line-height:1.45;margin:14px 2px;cursor:pointer}
+.sg-fm-check input{accent-color:var(--clay-deep);width:19px;height:19px;flex-shrink:0;margin-top:1px;cursor:pointer}
+.sg-fm-submit{width:100%;margin-top:16px;border:none}
+.sg-fm-submit:disabled{opacity:0.6;cursor:default;transform:none;box-shadow:none}
+.sg-fm-err{color:#b0402f;font-size:0.86rem;text-align:center;margin-top:12px}
+.sg-fm-hint{font-size:0.76rem;color:var(--light-gray);text-align:center;margin-top:14px;line-height:1.5}
+.sg-fm-success{max-width:600px;margin:0 auto;background:var(--warm-white);border-radius:24px;border:1px solid rgba(140,145,115,0.34);box-shadow:0 24px 70px rgba(107,83,55,0.12);padding:48px 40px;text-align:center}
+.sg-fm-success-ic{font-size:2.6rem;margin-bottom:12px}
+.sg-fm-success h3{font-family:var(--serif);font-size:1.7rem;font-weight:400;color:var(--brown);margin-bottom:12px}
+.sg-fm-success p{font-size:1rem;font-weight:300;color:var(--warm-gray);line-height:1.7}
+
 /* HOSTS */
 .sg-hosts{background:var(--cream);padding:100px 24px}
 .sg-hosts-c{text-align:center;max-width:640px;margin:0 auto 60px}
@@ -266,6 +307,10 @@ img{display:block}
   .sg-hosts-together{padding:32px 26px}
   .sg-carousel-arrow{width:40px;height:40px}
   .sg-top-logo{font-size:1.3rem;padding-bottom:8px}
+  .sg-fm-sec{padding:64px 18px 80px}
+  .sg-fm,.sg-fm-success{padding:28px 20px}
+  .sg-fm-row{flex-direction:column;gap:0}
+  .sg-fm-field[style]{flex:1 1 auto !important}
 }
 </style>
 </head>
@@ -564,6 +609,107 @@ img{display:block}
   </div>
 </section>
 
+<!-- ============ ANMELDUNG / FORMULAR ============ -->
+<section class="sg-fm-sec" id="anmeldung-form">
+  <div class="sg-fm-head sg-r">
+    <p class="sg-ey">Jetzt verbindlich anmelden</p>
+    <h2 class="sg-h2">Sichere dir deinen <em>Platz</em></h2>
+    <p class="sg-p">Trag dich hier ein – du erhältst anschließend von uns persönlich deine Buchungsbestätigung und Rechnung per E-Mail. Nur 8 Plätze.</p>
+  </div>
+
+  <form id="sgForm" class="sg-fm sg-r" novalidate>
+    <!-- Kontaktdaten -->
+    <div class="sg-fm-group">
+      <h3 class="sg-fm-legend">Deine Kontaktdaten</h3>
+      <div class="sg-fm-row">
+        <div class="sg-fm-field"><label>Vorname *</label><input type="text" name="Vorname" autocomplete="given-name" required></div>
+        <div class="sg-fm-field"><label>Nachname *</label><input type="text" name="Nachname" autocomplete="family-name" required></div>
+      </div>
+      <div class="sg-fm-field"><label>E-Mail-Adresse *</label><input type="email" name="E-Mail" autocomplete="email" required></div>
+      <div class="sg-fm-field"><label>Telefon (optional)</label><input type="tel" name="Telefon" autocomplete="tel"></div>
+    </div>
+
+    <!-- Rechnungsadresse -->
+    <div class="sg-fm-group">
+      <h3 class="sg-fm-legend">Rechnungsadresse</h3>
+      <div class="sg-fm-field"><label>Vollständiger Name (Rechnungsempfänger) *</label><input type="text" name="Rechnung – Vollständiger Name" required></div>
+      <div class="sg-fm-field"><label>Straße &amp; Hausnummer *</label><input type="text" name="Rechnung – Straße & Hausnummer" autocomplete="street-address" required></div>
+      <div class="sg-fm-row">
+        <div class="sg-fm-field" style="flex:0 0 34%"><label>PLZ *</label><input type="text" name="Rechnung – PLZ" autocomplete="postal-code" required></div>
+        <div class="sg-fm-field"><label>Ort *</label><input type="text" name="Rechnung – Ort" required></div>
+      </div>
+      <div class="sg-fm-field"><label>Land *</label>
+        <select name="Land" required>
+          <option value="Deutschland" selected>Deutschland</option>
+          <option value="Österreich">Österreich</option>
+          <option value="Schweiz">Schweiz</option>
+          <option value="Anderes Land">Anderes Land</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Ticketauswahl -->
+    <div class="sg-fm-group">
+      <h3 class="sg-fm-legend">Deine Ticketauswahl</h3>
+      <label class="sg-fm-ticket">
+        <input type="radio" name="Ticket" value="Early Bird – 1.777 €" checked>
+        <span class="sg-fm-ticket-body"><strong>Early Bird · 1.777 €</strong><small>bis 7. Juli 2026 · pro Person im Doppelzimmer</small></span>
+      </label>
+      <label class="sg-fm-ticket">
+        <input type="radio" name="Ticket" value="Regulär – 1.999 €">
+        <span class="sg-fm-ticket-body"><strong>Regulär · 1.999 €</strong><small>ab 8. Juli 2026 · pro Person im Doppelzimmer</small></span>
+      </label>
+    </div>
+
+    <div class="sg-fm-field"><label>Nachricht / Zimmerwunsch (optional)</label><textarea name="Nachricht / Zimmerwunsch" rows="3" placeholder="z. B. mit wem du dir ein Doppelzimmer teilen möchtest"></textarea></div>
+
+    <!-- Einwilligungen -->
+    <div class="sg-fm-consent">
+      <details class="sg-legal">
+        <summary>AGB &amp; Stornierungsbedingungen anzeigen</summary>
+        <div class="sg-legal-body">
+          <h4>§ 1 Vertragsschluss und Fälligkeit</h4>
+          <p>Mit dem Absenden des Buchungsformulars gibt der Teilnehmer ein verbindliches Angebot zum Kauf eines Tickets ab. Der Vertrag kommt mit Zugang der Buchungsbestätigung und Rechnung per E-Mail zustande. Der Rechnungsbetrag ist innerhalb von 14 Tagen ab Rechnungsdatum ohne Abzug per Überweisung fällig.</p>
+          <h4>§ 2 Stornierung und Rückgaberecht</h4>
+          <p>Eine Stornierung, Rückgabe oder Umtausch des Tickets durch den Teilnehmer ist grundsätzlich ausgeschlossen. Da es sich um eine Dienstleistung im Zusammenhang mit Freizeitbetätigungen oder einer termingebundenen Veranstaltung handelt, besteht kein gesetzliches Widerrufsrecht für den Teilnehmer (gemäß § 312g Abs. 2 Nr. 9 BGB).</p>
+          <h4>§ 3 Weitergabe und Übertragung des Tickets</h4>
+          <p>Sollte der Teilnehmer die Veranstaltung aus persönlichen oder gesundheitlichen Gründen nicht besuchen können, ist er berechtigt, selbstständig eine Ersatzperson zu suchen, auf die das Ticket übertragen werden kann. Eine solche Übertragung ist jedoch an folgende Bedingungen geknüpft:</p>
+          <ul>
+            <li>Die Weitergabe muss dem Veranstalter vorab schriftlich per E-Mail mitgeteilt werden.</li>
+            <li>Die Ersatzperson muss vor der finalen Ticketübertragung ein kurzes, persönliches Gespräch (z. B. telefonisch oder per Video-Call) mit dem Veranstalter führen.</li>
+            <li>Der Veranstalter behält sich das Recht vor, die Ersatzperson aus wichtigem Grund (z. B. mangelnde Passung zum Veranstaltungsformat) abzulehnen. Erst nach ausdrücklicher, schriftlicher Genehmigung durch den Veranstalter wird das Ticket auf die Ersatzperson umgeschrieben.</li>
+          </ul>
+        </div>
+      </details>
+      <label class="sg-fm-check"><input type="checkbox" name="AGB akzeptiert" value="Ja" required> <span>Ich akzeptiere die AGB und die Stornierungsbedingungen. *</span></label>
+
+      <details class="sg-legal">
+        <summary>Datenschutzhinweis anzeigen</summary>
+        <div class="sg-legal-body">
+          <p>Wenn Sie ein Ticket über unser Formular buchen, verarbeiten wir die von Ihnen eingegebenen Daten (Name, Anschrift, E-Mail-Adresse, ggf. Firmendaten). Die Verarbeitung erfolgt zum Zweck der Vertragserfüllung, der Rechnungsstellung und der Bereitstellung des Tickets (Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO). Zur Erfüllung steuerrechtlicher Pflichten werden die Rechnungsdaten gemäß den gesetzlichen Aufbewahrungsfristen (§ 147 AO) für 10 Jahre gespeichert. Eine Weitergabe an Dritte erfolgt nur an beteiligte Dienstleister (z. B. IT-Dienstleister, Buchhaltungssoftware, Steuerberater) im Rahmen der gesetzlichen Vorgaben.</p>
+        </div>
+      </details>
+      <label class="sg-fm-check"><input type="checkbox" name="Datenschutz akzeptiert" value="Ja" required> <span>Ich habe die Datenschutzerklärung zur Kenntnis genommen. *</span></label>
+    </div>
+
+    <!-- FormSubmit-Konfiguration -->
+    <input type="hidden" name="_subject" value="Neue Retreat-Anmeldung · Soul Glow Retreat">
+    <input type="hidden" name="_template" value="table">
+    <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+
+    <button type="submit" class="sg-btn sg-fm-submit" id="sgFormBtn">Verbindlich anmelden</button>
+    <p class="sg-fm-err" id="sgFormErr" hidden></p>
+    <p class="sg-fm-hint">Mit dem Absenden gibst du ein verbindliches Buchungsangebot ab. Bestätigung &amp; Rechnung folgen anschließend persönlich per E-Mail.</p>
+  </form>
+
+  <!-- Erfolgsmeldung -->
+  <div class="sg-fm-success" id="sgSuccess" hidden>
+    <div class="sg-fm-success-ic">🤍</div>
+    <h3>Danke – deine Anmeldung ist eingegangen!</h3>
+    <p>Wir haben deine Buchung erhalten und melden uns persönlich per E-Mail mit deiner Bestätigung und Rechnung. Wir freuen uns von Herzen auf dich!</p>
+  </div>
+</section>
+
 <!-- ============ HOSTS ============ -->
 <section class="sg-hosts">
   <div class="sg-hosts-c sg-r">
@@ -660,16 +806,46 @@ img{display:block}
 </footer>
 
 <script>
-/* ====== CHECKOUT-LINK ======
-   Sobald euer CopeCart-Link feststeht, hier eintragen –
-   dann leiten ALLE Buttons direkt zum Checkout weiter.
-   Solange leer: Buttons scrollen sanft zum Buchungs-/Preisbereich. */
-const CHECKOUT_URL = ""; // ← z.B. "https://www.copecart.com/products/xxxxx/checkout"
-
+/* ====== ANMELDUNG ======
+   Alle Buttons scrollen sanft zum Anmeldeformular.
+   Die Einsendungen gehen per FormSubmit an die unten hinterlegte E-Mail. */
 function sgCheckout(){
-  if(CHECKOUT_URL){ window.open(CHECKOUT_URL, "_blank"); }
-  else { document.getElementById('anmelden').scrollIntoView({behavior:'smooth'}); }
+  var t=document.getElementById('anmeldung-form');
+  if(t) t.scrollIntoView({behavior:'smooth'});
 }
+
+/* Formular-Versand (E-Mail-Empfänger hier ändern, falls nötig) */
+(function(){
+  var EMPFAENGER='coaching.janabuth@gmail.com';
+  var form=document.getElementById('sgForm');
+  if(!form) return;
+  var btn=document.getElementById('sgFormBtn');
+  var err=document.getElementById('sgFormErr');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    err.hidden=true;
+    if(!form.checkValidity()){ form.reportValidity(); return; }
+    var orig=btn.textContent; btn.disabled=true; btn.textContent='Wird gesendet …';
+    var data={}; new FormData(form).forEach(function(v,k){ data[k]=v; });
+    fetch('https://formsubmit.co/ajax/'+EMPFAENGER,{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify(data)
+    })
+    .then(function(r){ if(!r.ok) throw new Error('http'); return r.json(); })
+    .then(function(){
+      form.hidden=true;
+      var s=document.getElementById('sgSuccess');
+      s.hidden=false;
+      s.scrollIntoView({behavior:'smooth',block:'center'});
+    })
+    .catch(function(){
+      btn.disabled=false; btn.textContent=orig;
+      err.hidden=false;
+      err.textContent='Da ist etwas schiefgelaufen. Bitte versuch es erneut oder schreib uns direkt an '+EMPFAENGER+'.';
+    });
+  });
+})();
 
 /* Scroll-Reveal */
 document.querySelectorAll('.sg-r').forEach(function(el){
