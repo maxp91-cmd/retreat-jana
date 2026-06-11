@@ -612,107 +612,6 @@ img{display:block}
   </div>
 </section>
 
-<!-- ============ ANMELDUNG / FORMULAR ============ -->
-<section class="sg-fm-sec" id="anmeldung-form">
-  <div class="sg-fm-head sg-r">
-    <p class="sg-ey">Jetzt verbindlich anmelden</p>
-    <h2 class="sg-h2">Sichere dir deinen <em>Platz</em></h2>
-    <p class="sg-p">Trag dich hier ein – du erhältst anschließend von uns persönlich deine Buchungsbestätigung und Rechnung per E-Mail. Nur 8 Plätze.</p>
-  </div>
-
-  <form id="sgForm" class="sg-fm sg-r" novalidate>
-    <!-- Kontaktdaten -->
-    <div class="sg-fm-group">
-      <h3 class="sg-fm-legend">Deine Kontaktdaten</h3>
-      <div class="sg-fm-row">
-        <div class="sg-fm-field"><label>Vorname *</label><input type="text" name="Vorname" autocomplete="given-name" required></div>
-        <div class="sg-fm-field"><label>Nachname *</label><input type="text" name="Nachname" autocomplete="family-name" required></div>
-      </div>
-      <div class="sg-fm-field"><label>E-Mail-Adresse *</label><input type="email" name="E-Mail" autocomplete="email" required></div>
-      <div class="sg-fm-field"><label>Telefon (optional)</label><input type="tel" name="Telefon" autocomplete="tel"></div>
-    </div>
-
-    <!-- Rechnungsadresse -->
-    <div class="sg-fm-group">
-      <h3 class="sg-fm-legend">Rechnungsadresse</h3>
-      <div class="sg-fm-field"><label>Vollständiger Name (Rechnungsempfänger) *</label><input type="text" name="Rechnung – Vollständiger Name" required></div>
-      <div class="sg-fm-field"><label>Straße &amp; Hausnummer *</label><input type="text" name="Rechnung – Straße & Hausnummer" autocomplete="street-address" required></div>
-      <div class="sg-fm-row">
-        <div class="sg-fm-field" style="flex:0 0 34%"><label>PLZ *</label><input type="text" name="Rechnung – PLZ" autocomplete="postal-code" required></div>
-        <div class="sg-fm-field"><label>Ort *</label><input type="text" name="Rechnung – Ort" required></div>
-      </div>
-      <div class="sg-fm-field"><label>Land *</label>
-        <select name="Land" required>
-          <option value="Deutschland" selected>Deutschland</option>
-          <option value="Österreich">Österreich</option>
-          <option value="Schweiz">Schweiz</option>
-          <option value="Anderes Land">Anderes Land</option>
-        </select>
-      </div>
-    </div>
-
-    <!-- Ticketauswahl -->
-    <div class="sg-fm-group">
-      <h3 class="sg-fm-legend">Deine Ticketauswahl</h3>
-      <label class="sg-fm-ticket">
-        <input type="radio" name="Ticket" value="Early Bird – 1.777 €" checked>
-        <span class="sg-fm-ticket-body"><strong>Early Bird · 1.777 €</strong><small>bis 7. Juli 2026 · pro Person im Doppelzimmer</small></span>
-      </label>
-      <label class="sg-fm-ticket">
-        <input type="radio" name="Ticket" value="Regulär – 1.999 €">
-        <span class="sg-fm-ticket-body"><strong>Regulär · 1.999 €</strong><small>ab 8. Juli 2026 · pro Person im Doppelzimmer</small></span>
-      </label>
-    </div>
-
-    <div class="sg-fm-field"><label>Nachricht / Zimmerwunsch (optional)</label><textarea name="Nachricht / Zimmerwunsch" rows="3" placeholder="z. B. mit wem du dir ein Doppelzimmer teilen möchtest"></textarea></div>
-
-    <!-- Einwilligungen -->
-    <div class="sg-fm-consent">
-      <details class="sg-legal">
-        <summary>AGB &amp; Stornierungsbedingungen anzeigen</summary>
-        <div class="sg-legal-body">
-          <h4>§ 1 Vertragsschluss und Fälligkeit</h4>
-          <p>Mit dem Absenden des Buchungsformulars gibt der Teilnehmer ein verbindliches Angebot zum Kauf eines Tickets ab. Der Vertrag kommt mit Zugang der Buchungsbestätigung und Rechnung per E-Mail zustande. Der Rechnungsbetrag ist innerhalb von 14 Tagen ab Rechnungsdatum ohne Abzug per Überweisung fällig.</p>
-          <h4>§ 2 Stornierung und Rückgaberecht</h4>
-          <p>Eine Stornierung, Rückgabe oder Umtausch des Tickets durch den Teilnehmer ist grundsätzlich ausgeschlossen. Da es sich um eine Dienstleistung im Zusammenhang mit Freizeitbetätigungen oder einer termingebundenen Veranstaltung handelt, besteht kein gesetzliches Widerrufsrecht für den Teilnehmer (gemäß § 312g Abs. 2 Nr. 9 BGB).</p>
-          <h4>§ 3 Weitergabe und Übertragung des Tickets</h4>
-          <p>Sollte der Teilnehmer die Veranstaltung aus persönlichen oder gesundheitlichen Gründen nicht besuchen können, ist er berechtigt, selbstständig eine Ersatzperson zu suchen, auf die das Ticket übertragen werden kann. Eine solche Übertragung ist jedoch an folgende Bedingungen geknüpft:</p>
-          <ul>
-            <li>Die Weitergabe muss dem Veranstalter vorab schriftlich per E-Mail mitgeteilt werden.</li>
-            <li>Die Ersatzperson muss vor der finalen Ticketübertragung ein kurzes, persönliches Gespräch (z. B. telefonisch oder per Video-Call) mit dem Veranstalter führen.</li>
-            <li>Der Veranstalter behält sich das Recht vor, die Ersatzperson aus wichtigem Grund (z. B. mangelnde Passung zum Veranstaltungsformat) abzulehnen. Erst nach ausdrücklicher, schriftlicher Genehmigung durch den Veranstalter wird das Ticket auf die Ersatzperson umgeschrieben.</li>
-          </ul>
-        </div>
-      </details>
-      <label class="sg-fm-check"><input type="checkbox" name="AGB akzeptiert" value="Ja" required> <span>Ich akzeptiere die AGB und die Stornierungsbedingungen. *</span></label>
-
-      <details class="sg-legal">
-        <summary>Datenschutzhinweis anzeigen</summary>
-        <div class="sg-legal-body">
-          <p>Wenn Sie ein Ticket über unser Formular buchen, verarbeiten wir die von Ihnen eingegebenen Daten (Name, Anschrift, E-Mail-Adresse, ggf. Firmendaten). Die Verarbeitung erfolgt zum Zweck der Vertragserfüllung, der Rechnungsstellung und der Bereitstellung des Tickets (Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO). Zur Erfüllung steuerrechtlicher Pflichten werden die Rechnungsdaten gemäß den gesetzlichen Aufbewahrungsfristen (§ 147 AO) für 10 Jahre gespeichert. Eine Weitergabe an Dritte erfolgt nur an beteiligte Dienstleister (z. B. IT-Dienstleister, Buchhaltungssoftware, Steuerberater) im Rahmen der gesetzlichen Vorgaben.</p>
-        </div>
-      </details>
-      <label class="sg-fm-check"><input type="checkbox" name="Datenschutz akzeptiert" value="Ja" required> <span>Ich habe die <a href="datenschutz.html" target="_blank" rel="noopener" style="color:var(--clay-deep);text-decoration:underline">Datenschutzerklärung</a> zur Kenntnis genommen. *</span></label>
-    </div>
-
-    <!-- FormSubmit-Konfiguration -->
-    <input type="hidden" name="_subject" value="Neue Retreat-Anmeldung · Soul Glow Retreat">
-    <input type="hidden" name="_template" value="table">
-    <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
-
-    <button type="submit" class="sg-btn sg-fm-submit" id="sgFormBtn">Verbindlich anmelden</button>
-    <p class="sg-fm-err" id="sgFormErr" hidden></p>
-    <p class="sg-fm-hint">Mit dem Absenden gibst du ein verbindliches Buchungsangebot ab. Bestätigung &amp; Rechnung folgen anschließend persönlich per E-Mail.</p>
-  </form>
-
-  <!-- Erfolgsmeldung -->
-  <div class="sg-fm-success" id="sgSuccess" hidden>
-    <div class="sg-fm-success-ic">🤍</div>
-    <h3>Danke – deine Anmeldung ist eingegangen!</h3>
-    <p>Wir haben deine Buchung erhalten und melden uns persönlich per E-Mail mit deiner Bestätigung und Rechnung. Wir freuen uns von Herzen auf dich!</p>
-  </div>
-</section>
-
 <!-- ============ HOSTS ============ -->
 <section class="sg-hosts">
   <div class="sg-hosts-c sg-r">
@@ -810,45 +709,10 @@ img{display:block}
 
 <script>
 /* ====== ANMELDUNG ======
-   Alle Buttons scrollen sanft zum Anmeldeformular.
-   Die Einsendungen gehen per FormSubmit an die unten hinterlegte E-Mail. */
+   Alle Buttons öffnen die separate Anmeldeseite. */
 function sgCheckout(){
-  var t=document.getElementById('anmeldung-form');
-  if(t) t.scrollIntoView({behavior:'smooth'});
+  window.location.href='anmeldung.html';
 }
-
-/* Formular-Versand (E-Mail-Empfänger hier ändern, falls nötig) */
-(function(){
-  var EMPFAENGER='coaching.janabuth@gmail.com';
-  var form=document.getElementById('sgForm');
-  if(!form) return;
-  var btn=document.getElementById('sgFormBtn');
-  var err=document.getElementById('sgFormErr');
-  form.addEventListener('submit',function(e){
-    e.preventDefault();
-    err.hidden=true;
-    if(!form.checkValidity()){ form.reportValidity(); return; }
-    var orig=btn.textContent; btn.disabled=true; btn.textContent='Wird gesendet …';
-    var data={}; new FormData(form).forEach(function(v,k){ data[k]=v; });
-    fetch('https://formsubmit.co/ajax/'+EMPFAENGER,{
-      method:'POST',
-      headers:{'Content-Type':'application/json','Accept':'application/json'},
-      body:JSON.stringify(data)
-    })
-    .then(function(r){ if(!r.ok) throw new Error('http'); return r.json(); })
-    .then(function(){
-      form.hidden=true;
-      var s=document.getElementById('sgSuccess');
-      s.hidden=false;
-      s.scrollIntoView({behavior:'smooth',block:'center'});
-    })
-    .catch(function(){
-      btn.disabled=false; btn.textContent=orig;
-      err.hidden=false;
-      err.textContent='Da ist etwas schiefgelaufen. Bitte versuch es erneut oder schreib uns direkt an '+EMPFAENGER+'.';
-    });
-  });
-})();
 
 /* Scroll-Reveal */
 document.querySelectorAll('.sg-r').forEach(function(el){
